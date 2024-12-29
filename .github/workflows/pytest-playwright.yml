@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 env:
-  standard_user_id: ${{ secrets.STANDARD_USER }}
+  standard_user_id: ${{ secrets.STANDARD_USER_ID }}
   general_pw: ${{ secrets.GENERAL_PW }}
 
 jobs:
