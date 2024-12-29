@@ -2,6 +2,6 @@
 .venv/
 *.pyc
 __pycache__/
+test-results/
 
-# Ignore the specific file
-ignore_this_file_test.py
+
