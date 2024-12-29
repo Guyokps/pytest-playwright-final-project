@@ -10,7 +10,8 @@ permissions:
   contents: read
 
 env:
-  login_id: ${{ secrets.LOGIN_USERNAME }}
+  standard_user_id: ${{ secrets.STANDARD_USER }}
+  general_pw: ${{ secrets.GENERAL_PW }}
 
 jobs:
   build:

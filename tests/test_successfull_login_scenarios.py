@@ -1,11 +1,17 @@
 from playwright.sync_api import Page, expect
 import pytest
 import os
+from dotenv import load_dotenv
 
-LOGIN_USERNAME = os.environ["login_id"]
+# Load environment variables from .env file
+load_dotenv()
+
+standard_user_id = os.getenv('STANDARD_USER_ID')
+general_pw = os.getenv('GENERAL_PW')
+
 
 test_date = [
-    ("standard_user", "secret_sauce"),
+    (standard_user_id, general_pw),
     ("problem_user", "secret_sauce"),
     ("performance_glitch_user", "secret_sauce"),
     ("error_user", "secret_sauce"),
