@@ -3,7 +3,6 @@ import pytest
 import os
 
 LOGIN_USERNAME = os.environ["login_id"]
-print(LOGIN_USERNAME)
 
 test_date = [
     ("standard_user", "secret_sauce"),
