@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  login_id: ${{ secrets.LOGIN_USERNAME }}
+
 jobs:
   build:
 
