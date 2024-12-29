@@ -1,0 +1,5 @@
+.idea/
+.venv/
+*.pyc
+__pycache__/
+ignore_this_file_test.py/
