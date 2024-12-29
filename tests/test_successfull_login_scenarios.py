@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-standard_user_id = os.getenv('STANDARD_USER_ID')
-general_pw = os.getenv('GENERAL_PW')
+standard_user_id = os.getenv('standard_user_id')
+general_pw = os.getenv('general_pw')
 
 
 test_date = [
