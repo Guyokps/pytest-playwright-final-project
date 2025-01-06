@@ -35,8 +35,9 @@ jobs:
           pip install -r requirements.txt
 
       - name: Ensure browsers are installed
-        run: python -m playwright install --with-deps
-
+        run: |
+          source .venv/bin/activate
+          python -m playwright install --with-deps
 
       - name: Run tests
         run: |
