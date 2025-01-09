@@ -6,8 +6,8 @@ from Locators.cloud_offer_page_locators import OfferPageLocators
 
 
 def test_xbox_shop_visibility(page: Page) -> None:
-    page.goto("https://playable.ludeo.com/8774c270-e3b0-4ef2-ae32-5fda703574bc/offer")
-    expect(page.get_by_text("XBoxPLAY")).to_be_visible()
+    page.goto(OfferPageLocators.hitman_url_offer_page)
+    expect(page.get_by_text(OfferPageLocators.xbox_shop_visibility)).to_be_visible()
     expect(page.locator("#root")).to_contain_text("PLAY")
 
 # Add navigation to shop
